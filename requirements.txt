@@ -1,0 +1,26 @@
+# Core
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.45.0
+peft>=0.7.0
+accelerate
+datasets
+pyarrow
+Pillow
+numpy
+
+# Training
+swanlab
+
+# Eval & RL Dataset
+openai
+python-dotenv
+
+# Web App
+fastapi
+uvicorn
+python-multipart
+pydantic
+
+# Demo
+gradio

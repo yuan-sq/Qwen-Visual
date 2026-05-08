@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# 模型权重与数据（需自行准备）
+out/
+models/
+dataset/
+rl_dataset/
+*.pth
+*.parquet
+*.safetensors
+*.bin
+
+# Tokenizer 文件（来自 Qwen 基座模型，随基座模型获取）
+model/tokenizer.json
+model/tokenizer_config.json
+
+# 环境与密钥
+.env
+.env.*
+*.pem
+
+# 评测中间结果
+bench_results/
+judge_results/
+eval_results.txt
+
+# Web App 运行时
+web_app/backend/chats/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# AI 辅助编码
+CLAUDE.md
