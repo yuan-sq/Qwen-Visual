@@ -168,13 +168,6 @@ cd scripts && python web_demo_vlm.py
 cd scripts && python convert_vlm.py
 ```
 
-## 已知问题
-
-- **`--num_workers` 死锁**: 使用 SkipBatchSampler 时 `num_workers > 0` 会在 ~6000 步死锁，必须设为 0
-- **训练脚本工作目录**: 必须从 `trainer/` 目录运行（`cd trainer && python train_*.py`）
-- **LoRA 合并**: SFT checkpoint 保存前会自动调用 `merge_and_unload()`，无需手动处理
-- **transformers 5.x**: 加载本地模型时需使用 `os.path.abspath()` + `local_files_only=True`
-
 ## 致谢
 
 - [MiniMind](https://github.com/jingyaogong/minimind) — 项目灵感来源
